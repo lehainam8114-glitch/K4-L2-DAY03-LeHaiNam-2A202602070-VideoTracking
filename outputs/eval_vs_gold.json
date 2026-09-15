@@ -1,0 +1,82 @@
+{
+  "clip": "clip_01",
+  "frames": 190,
+  "iou_threshold": 0.5,
+  "pred_file": "/content/Day3-Lab/annotations/clip_01/gt.txt",
+  "gt_file": "/content/Day3-Lab/gold/clip_01/gt.txt",
+  "pred_label": "nhãn của bạn",
+  "gt_label": "gold clip_01",
+  "metrics": {
+    "HOTA": 0.7953,
+    "DetA": 0.7835,
+    "AssA": 0.8097,
+    "LocA": 0.8683,
+    "IDF1": 0.959,
+    "IDTP": 538,
+    "IDFP": 11,
+    "IDFN": 35,
+    "MOTA": 0.9197,
+    "MOTP": 0.8548,
+    "IDSW": 0,
+    "FP": 11,
+    "FN": 35,
+    "GT_boxes": 573,
+    "PRED_boxes": 549
+  },
+  "gate": {
+    "checks": {
+      "IDF1": {
+        "value": 0.9590017825311943,
+        "required": 0.8,
+        "passed": true
+      },
+      "MOTA": {
+        "value": 0.9197207678883071,
+        "required": 0.75,
+        "passed": true
+      },
+      "MOTP": {
+        "value": 0.8548233878365981,
+        "required": 0.7,
+        "passed": true
+      }
+    },
+    "passed": true
+  },
+  "diagnostics": {
+    "missed_gt_tracks": [],
+    "fragmented_gt_tracks": [],
+    "partially_covered_gt_tracks": [],
+    "ghost_pred_tracks": [
+      {
+        "pred_track": 4,
+        "reason": "còn bbox sau khi track tham chiếu 4 đã rời khung",
+        "frames": [
+          149,
+          151
+        ],
+        "length": 3
+      },
+      {
+        "pred_track": 8,
+        "reason": "còn bbox sau khi track tham chiếu 8 đã rời khung",
+        "frames": [
+          169,
+          171
+        ],
+        "length": 3
+      }
+    ],
+    "id_switches": [],
+    "loose_boxes": [
+      {
+        "frame": 168,
+        "gt_track": 8,
+        "pred_track": 8,
+        "iou": 0.572
+      }
+    ],
+    "n_gt_tracks": 8,
+    "n_pred_tracks": 8
+  }
+}
